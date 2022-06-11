@@ -35,9 +35,9 @@ function App() {
         )}
       </nav>
       <Routes>
-        <Route path="/" element={<Home isAuth={isAuth} />} />
-        <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
-        <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
+        <Route path="/ReactJs-Blog-Website/" element={<Home isAuth={isAuth} />} />
+        <Route path="/ReactJs-Blog-Website/createpost" element={<CreatePost isAuth={isAuth} />} />
+        <Route path="/ReactJs-Blog-Websitelogin" element={<Login setIsAuth={setIsAuth} />} />
       </Routes>
     </BrowserRouter>
   );
