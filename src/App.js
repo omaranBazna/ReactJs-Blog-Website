@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, HashRouter as Router } from "react-router-dom";
 import Home from "./pages/Home";
 import CreatePost from "./pages/CreatePost";
 import Login from "./pages/Login";
@@ -35,9 +35,9 @@ function App() {
         )}
       </nav>
       <Routes>
-        <Route path="/ReactJs-Blog-Website/" element={<Home isAuth={isAuth} />} />
-        <Route path="/ReactJs-Blog-Website/createpost" element={<CreatePost isAuth={isAuth} />} />
-        <Route path="/ReactJs-Blog-Websitelogin" element={<Login setIsAuth={setIsAuth} />} />
+        <Route path="/" element={<Home isAuth={isAuth} />} />
+        <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
+        <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
       </Routes>
     </BrowserRouter>
   );

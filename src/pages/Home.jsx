@@ -27,7 +27,7 @@ const Home = ({ isAuth }) => {
           <div className="post">
             <div className="postHeader">
               <div className="title">
-                <h1>{post.title}</h1>
+                <h1>{post.title}</h1> 
               </div>
               <div className="deletePost">
                 {isAuth && post.author.id === auth.currentUser.uid && (
@@ -42,6 +42,7 @@ const Home = ({ isAuth }) => {
                 )}
               </div>
             </div>
+            <img className="cpContainer" src={post.link} />
             <div className="postTextContainer">{post.postText}</div>
             <h3>@{post.author.name}</h3>
           </div>
